@@ -8,4 +8,8 @@ $app->get('/', function(){
 	return 'Olá mundo!';
 });
 
+$app->get('/ola/{name}', function($name){
+	return sprintf('Olá %s!', $name);
+});
+
 $app->run();
